@@ -19,10 +19,6 @@
 libname wpsuser "d:/wpsusr";
 libname wpshelp wpd (sashelp);
 
-%global _init_;
-%let _init_= %nrstr(ods html close;ods listing;
- options ls=255 ps=65  nofmterr nocenter nodate nonumber noquotelenmax validvarname=upcase
- compress=no FORMCHAR='|----|+|---+=|-/\<>*');
 
    proc format;
 
@@ -146,6 +142,7 @@ root.mainloop()
 endsubmit;
 run;quit;
 ----*/
+
 
 
 
